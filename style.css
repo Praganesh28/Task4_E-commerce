@@ -1,8 +1,0 @@
-.nav-item .nav-link{
-    font: bold;
-    color: red !important;
-}
-
-.nav-item .nav-link :hover{
-   border-bottom: 1px solid red ;
-}
