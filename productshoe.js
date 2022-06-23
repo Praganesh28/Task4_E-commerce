@@ -40,24 +40,24 @@ for(const element of productsports){
 }
 
 
-function addToCart(image_url, name, price){
-    alert("Item is added to cart");
-    let cart_products = JSON.parse(localStorage.getItem('OnlineShopping')) || [];
-    let found = false;
-    cart_products.map((product)=>{
-        if(product['name'] == name){
-            found = true;
-            product['quantity'] ++;
-        }
-    });
-    if(!found){
-        cart_products.push({
-            image_url: image_url,
-            name: name,
-            price: price,
-            quantity: 1
-        });
-    }
-    console.log(cart_products);
-    localStorage.setItem('OnlineShopping', JSON.stringify(cart_products));
-}
+// function addToCart(image_url, name, price){
+//     alert("Item is added to cart");
+//     let cart_products = JSON.parse(localStorage.getItem('OnlineShopping')) || [];
+//     let found = false;
+//     cart_products.map((product)=>{
+//         if(product['name'] == name){
+//             found = true;
+//             product['quantity'] ++;
+//         }
+//     });
+//     if(!found){
+//         cart_products.push({
+//             image_url: image_url,
+//             name: name,
+//             price: price,
+//             quantity: 1
+//         });
+//     }
+//     console.log(cart_products);
+//     localStorage.setItem('OnlineShopping', JSON.stringify(cart_products));
+// }
